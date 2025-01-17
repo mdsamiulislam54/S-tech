@@ -1,0 +1,120 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* common styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    max-width: 1050px;
+    margin: 0 auto;
+}
+li, a{
+    text-decoration: none;
+    list-style: none;
+}
+.d-flex{
+    display: flex;
+}
+:root{
+    --primary-color: rgba(150, 187, 124, 1);
+}
+.primary_button{
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+/* common styles */
+
+/* header part styles start */
+.header_part{
+    position: relative;
+}
+.header_part::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 100px;
+    background-color: orange;
+    border-bottom-right-radius: 30px;
+}
+.header_part::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90px;
+    height: 120px;
+    background-color: orange;
+    border-bottom-left-radius: 30px;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.nav_item{
+    margin-right: 20px;
+    align-items: center;
+}
+.brand_s{
+    color: red;
+}
+.brand_title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.nav_item{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.583);
+    transition: all linear 0.3s;
+}
+.nav_item:hover{
+    color: black;
+}
+
+/* header part styles end */
+
+/* banner part styles start */
+
+.banner_part{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner_images img{
+    width: 100%;
+    height: auto;
+}
+.banner_text > h6{
+    font-size: 1rem;
+    color: var(--primary-color);
+    padding: 10px 0px;
+}
+.banner_text >h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner_text > p{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.447);
+    letter-spacing: 0.1rem;
+    padding-right: 10rem;
+    margin: 20px 0px;
+}
+
+
+/* banner part styles end */
