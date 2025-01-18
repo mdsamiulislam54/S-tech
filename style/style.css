@@ -9,10 +9,13 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+   
 }
 .container{
     max-width: 1050px;
     margin: 0 auto;
+    background-color: #fff;
+    padding: 5px;
 }
 li, a{
     text-decoration: none;
@@ -39,6 +42,8 @@ li, a{
 /* header part styles start */
 .header_part{
     position: relative;
+    
+    
 }
 .header_part::after{
     content: '';
@@ -118,3 +123,28 @@ li, a{
 
 
 /* banner part styles end */
+
+/* course part styles start */
+
+.course{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin:70px 0px;
+}
+.course >h4{
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+.course > h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.course > p{
+    font-size: 1rem;
+    text-align: center;
+}
+.course > img{
+    width: 100%;
+}
