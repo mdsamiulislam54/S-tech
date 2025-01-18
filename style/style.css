@@ -144,7 +144,84 @@ li, a{
 .course > p{
     font-size: 1rem;
     text-align: center;
+    letter-spacing: 2px;
 }
 .course > img{
     width: 100%;
+}
+
+/* subcription section styles start */
+
+.sub_card_text{
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.sub_card_text > h4{
+    font-size: 1rem;
+    color: var(--primary-color);
+
+}
+.sub_card_text> h2{
+    font-size: 2rem;
+
+}
+.sub_card_text> p{
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 2px;
+    
+}
+.subcription_card{
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    transition: all linear 0.5s;
+   
+}
+.card_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 50px 0px;
+}
+.subcription_card> h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.subcription_card>p{
+    text-align: center;
+    color: #918b8b;
+    font-size: 1rem;
+}
+.subcription_card button{
+    width: 100%;
+}
+.subcription_card>h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.subcription_card>h6{
+    font-size: 1rem;
+    color: rgba(142, 194, 242, 1);
+}
+.subcription_card{
+    box-shadow: 10px 10px 20px 10px  rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.subcription_card_active_color{
+    background-color: rgba(0, 0, 0, 0.797);
+    color: #fff;
+}
+
+.subcription_card:hover{
+    background-color: rgba(0, 0, 0, 0.797);
+    color: #fff;
 }
